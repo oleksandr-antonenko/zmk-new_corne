@@ -2,10 +2,10 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
+  - {t: Q, h: Ctl+1}
+  - {t: W, h: Ctl+2}
+  - {t: E, h: Ctl+3}
+  - {t: R, h: Ctl+4}
   - T
   - $$mdi:arrow-up-bold$$
   - {t: Y, h: LGUI}
@@ -205,4 +205,19 @@ combos:
   l: [QWERTY]
 - p: [9, 10]
   k: {t: '`', s: '~'}
+  l: [QWERTY]
+- p: [5, 4]
+  k: $$mdi:volume-high$$
+  l: [QWERTY]
+- p: [3, 4]
+  k: $$mdi:volume-low$$
+  l: [QWERTY]
+- p: [10, 11]
+  k: PLAY PAUSE
+  l: [QWERTY]
+- p: [22, 23]
+  k: PREVIOUS
+  l: [QWERTY]
+- p: [11, 12]
+  k: $$mdi:skip-next$$
   l: [QWERTY]
