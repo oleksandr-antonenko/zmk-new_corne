@@ -102,7 +102,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <1000>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -110,7 +110,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <1000>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -118,7 +118,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <1000>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -126,7 +126,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <1000>;
             bindings = <&kp>, <&kp>;
         };
     };
