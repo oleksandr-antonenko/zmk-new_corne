@@ -50,6 +50,82 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        g_ctrl: g_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        h_ctrl: h_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        y_cmd: y_cmd {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        
+        // Russian letter х (kh) - combo of Y + U
+        combo_kh {
+            timeout-ms = <50>;
+            key-positions = <7 8>; // Y and U positions
+            bindings = <&kp LBKT>; // [ key produces х in Russian layout
+            layers = <0>;
+        };
+        
+        // Russian letter ъ (hard sign) - combo of U + I
+        combo_hard_sign {
+            timeout-ms = <50>;
+            key-positions = <8 9>; // U and I positions
+            bindings = <&kp RBKT>; // ] key produces ъ in Russian layout
+            layers = <0>;
+        };
+        
+        // Russian letter ё (yo) - combo of I + O
+        combo_yo {
+            timeout-ms = <50>;
+            key-positions = <9 10>; // I and O positions
+            bindings = <&kp GRAVE>; // ` key produces ё in Russian layout
+            layers = <0>;
+        };
+        
+        // Word navigation combos
+        // H + J = Option+Left (previous word)
+        combo_word_left {
+            timeout-ms = <50>;
+            key-positions = <19 20>; // H and J positions
+            bindings = <&kp LA(LEFT)>; // Option+Left
+            layers = <0>;
+        };
+        
+        // K + L = Option+Right (next word)
+        combo_word_right {
+            timeout-ms = <50>;
+            key-positions = <21 22>; // K and L positions
+            bindings = <&kp LA(RIGHT)>; // Option+Right
+            layers = <0>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -72,9 +148,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &f_shift LSHIFT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &j_shift RSHIFT J  &kp K      &kp L    &kp SEMI  &kp SQT
-&td0       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &kp P     &bspc_del
+&kp LCTRL  &kp A  &kp S  &kp D     &f_shift LSHIFT F  &g_ctrl LCTRL G           &kp LEFT  &kp ENTER  &kp RIGHT  &h_ctrl RCTRL H  &j_shift RSHIFT J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHIFT &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
