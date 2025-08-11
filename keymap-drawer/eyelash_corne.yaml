@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-esc$$
   - {t: Q, h: Ctl+1}
   - {t: W, h: Ctl+2}
   - {t: E, h: Ctl+3}
@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - {t: ;, s: ':'}
   - LGUI
   - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn}
