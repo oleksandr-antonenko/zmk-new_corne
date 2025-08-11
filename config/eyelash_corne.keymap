@@ -81,6 +81,22 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+
+        n_word_left: n_word_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        m_word_right: m_word_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     combos {
@@ -110,22 +126,6 @@
             layers = <0>;
         };
         
-        // Word navigation combos
-        // H + J = Option+Left (previous word)
-        combo_word_left {
-            timeout-ms = <50>;
-            key-positions = <19 20>; // H and J positions
-            bindings = <&kp LA(LEFT)>; // Option+Left
-            layers = <0>;
-        };
-        
-        // K + L = Option+Right (next word)
-        combo_word_right {
-            timeout-ms = <50>;
-            key-positions = <21 22>; // K and L positions
-            bindings = <&kp LA(RIGHT)>; // Option+Right
-            layers = <0>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -150,7 +150,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &kp P     &bspc_del
 &kp LCTRL  &kp A  &kp S  &kp D     &f_shift LSHIFT F  &g_ctrl LCTRL G           &kp LEFT  &kp ENTER  &kp RIGHT  &h_ctrl RCTRL H  &j_shift RSHIFT J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHIFT &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp LSHIFT &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &n_word_left LA(LEFT) N  &m_word_right LA(RIGHT) M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
