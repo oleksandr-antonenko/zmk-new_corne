@@ -8,28 +8,28 @@ layers:
   - R
   - T
   - $$mdi:arrow-up-bold$$
-  - Y
+  - {t: Y, h: LGUI}
   - U
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
   - D
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
+  - {t: G, h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - H
+  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - K
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - '&td0'
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -196,3 +196,19 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [7, 8]
+  k: {t: '[', s: '{'}
+  l: [QWERTY]
+- p: [8, 9]
+  k: {t: ']', s: '}'}
+  l: [QWERTY]
+- p: [9, 10]
+  k: {t: '`', s: '~'}
+  l: [QWERTY]
+- p: [19, 20]
+  k: Alt+$$mdi:arrow-left-bold$$
+  l: [QWERTY]
+- p: [21, 22]
+  k: Alt+$$mdi:arrow-right-bold$$
+  l: [QWERTY]
