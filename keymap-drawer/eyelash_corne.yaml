@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', s: Ctl+C}
   - {t: Q, h: Ctl+1}
   - {t: W, h: Ctl+2}
   - {t: E, h: Ctl+3}
