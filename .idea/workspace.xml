@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c769af0c-7054-45a2-be20-c02d1be0e4cc" name="Changes" comment="open warp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c769af0c-7054-45a2-be20-c02d1be0e4cc" name="Changes" comment="open warp disable">
       <change beforePath="$PROJECT_DIR$/config/eyelash_corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/eyelash_corne.keymap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,7 @@
       <workItem from="1754922798181" duration="5448000" />
       <workItem from="1754955266853" duration="598000" />
       <workItem from="1754995289239" duration="3017000" />
-      <workItem from="1755043820491" duration="1925000" />
+      <workItem from="1755043820491" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="correct switch to eng">
       <option name="closed" value="true" />
@@ -200,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755044910368</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="open warp disable">
+      <option name="closed" value="true" />
+      <created>1755045823510</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1755045823510</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +250,7 @@
     <MESSAGE value="colon on bottom right + dellay for ctrl1234" />
     <MESSAGE value="long press" />
     <MESSAGE value="open warp" />
-    <option name="LAST_COMMIT_MESSAGE" value="open warp" />
+    <MESSAGE value="open warp disable" />
+    <option name="LAST_COMMIT_MESSAGE" value="open warp disable" />
   </component>
 </project>

@@ -102,7 +102,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <500>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -110,7 +110,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <500>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -118,7 +118,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <500>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -126,7 +126,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <500>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -252,7 +252,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&cmd_esc_ctrl_c    &q_ctrl1 LC(N1) Q  &kp W  &e_ctrl3 LC(N3) E  &r_ctrl4 LC(N4) R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &p_screenshot LC(LS(N4)) P     &bspc_del
+&cmd_esc_ctrl_c    &q_ctrl1 LC(N1) Q  &w_ctrl2 LC(N2) W  &e_ctrl3 LC(N3) E  &r_ctrl4 LC(N4) R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &p_screenshot LC(LS(N4)) P     &bspc_del
 &kp TAB    &kp A  &kp S  &kp D     &f_shift LSHIFT F  &g_ctrl LCTRL G           &kp LEFT  &kp ENTER  &kp RIGHT  &h_ctrl RCTRL H  &j_shift RSHIFT J  &kp K      &l_lockscreen LG(LC(Q)) L    &kp SEMI  &kp SQT
 &kp LALT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &n_word_left LA(LEFT) N  &m_word_right LA(RIGHT) M  &kp COMMA  &kp DOT  &kp FSLH  &kp LS(COLON)
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
