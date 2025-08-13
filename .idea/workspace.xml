@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c769af0c-7054-45a2-be20-c02d1be0e4cc" name="Changes" comment="delays for hold">
+    <list default="true" id="c769af0c-7054-45a2-be20-c02d1be0e4cc" name="Changes" comment="screenshot fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/eyelash_corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/eyelash_corne.keymap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +78,7 @@
       <workItem from="1754922798181" duration="5448000" />
       <workItem from="1754955266853" duration="598000" />
       <workItem from="1754995289239" duration="3017000" />
-      <workItem from="1755043820491" duration="2503000" />
+      <workItem from="1755043820491" duration="3871000" />
     </task>
     <task id="LOCAL-00001" summary="correct switch to eng">
       <option name="closed" value="true" />
@@ -223,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755045992799</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="screenshot fix">
+      <option name="closed" value="true" />
+      <created>1755046349751</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1755046349751</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +278,7 @@
     <MESSAGE value="open warp disable" />
     <MESSAGE value="changew workspace qwer" />
     <MESSAGE value="delays for hold" />
-    <option name="LAST_COMMIT_MESSAGE" value="delays for hold" />
+    <MESSAGE value="screenshot fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="screenshot fix" />
   </component>
 </project>
