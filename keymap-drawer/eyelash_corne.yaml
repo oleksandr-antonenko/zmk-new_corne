@@ -3,7 +3,7 @@ layers:
   QWERTY:
   - {t: '$$mdi:keyboard-esc$$', s: Ctl+C}
   - {t: Q, h: Ctl+1}
-  - {t: W, h: Gui+Alt+W}
+  - W
   - {t: E, h: Ctl+3}
   - {t: R, h: Ctl+4}
   - T
