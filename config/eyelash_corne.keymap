@@ -136,6 +136,30 @@
             bindings = <&kp ESC>, <&kp LC(C)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
+
+        p_screenshot: p_screenshot {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1500>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        l_lockscreen: l_lockscreen {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1500>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        w_warp: w_warp {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1500>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     combos {
@@ -228,8 +252,8 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&cmd_esc_ctrl_c    &q_ctrl1 LC(N1) Q  &w_ctrl2 LC(N2) W  &e_ctrl3 LC(N3) E  &r_ctrl4 LC(N4) R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &kp P     &bspc_del
-&kp TAB    &kp A  &kp S  &kp D     &f_shift LSHIFT F  &g_ctrl LCTRL G           &kp LEFT  &kp ENTER  &kp RIGHT  &h_ctrl RCTRL H  &j_shift RSHIFT J  &kp K      &kp L    &kp SEMI  &kp SQT
+&cmd_esc_ctrl_c    &q_ctrl1 LC(N1) Q  &w_warp LG(LS(LC(W))) W  &e_ctrl3 LC(N3) E  &r_ctrl4 LC(N4) R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &p_screenshot LC(LS(N4)) P     &bspc_del
+&kp TAB    &kp A  &kp S  &kp D     &f_shift LSHIFT F  &g_ctrl LCTRL G           &kp LEFT  &kp ENTER  &kp RIGHT  &h_ctrl RCTRL H  &j_shift RSHIFT J  &kp K      &l_lockscreen LG(LC(Q)) L    &kp SEMI  &kp SQT
 &kp LALT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &n_word_left LA(LEFT) N  &m_word_right LA(RIGHT) M  &kp COMMA  &kp DOT  &kp FSLH  &kp LS(COLON)
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
             >;
@@ -254,7 +278,7 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
