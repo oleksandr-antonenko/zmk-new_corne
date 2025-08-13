@@ -3,7 +3,7 @@ layers:
   QWERTY:
   - {t: '$$mdi:keyboard-esc$$', s: Ctl+C}
   - {t: Q, h: Ctl+1}
-  - {t: W, h: Ctl+2}
+  - {t: W, h: Gui+Sft+Ctl+W}
   - {t: E, h: Ctl+3}
   - {t: R, h: Ctl+4}
   - T
@@ -12,7 +12,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: P, h: Ctl+Sft+4}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:keyboard-tab$$
   - A
@@ -26,7 +26,7 @@ layers:
   - {t: H, h: '$$mdi:apple-keyboard-control$$'}
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - K
-  - L
+  - {t: L, h: Gui+Ctl+Q}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-option$$
@@ -99,7 +99,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - '!'
   - '@'
   - '#'
