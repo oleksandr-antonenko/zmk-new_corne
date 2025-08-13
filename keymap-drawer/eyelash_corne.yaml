@@ -12,7 +12,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: Ctl+Sft+4}
+  - {t: P, h: Gui+Sft+4}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:keyboard-tab$$
   - A
