@@ -141,7 +141,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <1500>;
+            tapping-term-ms = <500>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -149,15 +149,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <1500>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        w_warp: w_warp {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <1500>;
+            tapping-term-ms = <1000>;
             bindings = <&kp>, <&kp>;
         };
     };
