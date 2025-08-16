@@ -164,6 +164,14 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp C &kp D &kp SPACE &kp TILDE &kp FSLH &kp W &kp W &kp W &kp SQT>;
         };
+
+        media_layer: media_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     combos {
@@ -193,46 +201,6 @@
             layers = <0>;
         };
         
-        // Media control combos
-        // T + R = Volume Up
-        combo_vol_up {
-            timeout-ms = <100>;
-            key-positions = <5 4>; // T and R positions
-            bindings = <&kp C_VOLUME_UP>;
-            layers = <0>;
-        };
-        
-        // E + R = Volume Down
-        combo_vol_down {
-            timeout-ms = <100>;
-            key-positions = <3 4>; // E and R positions
-            bindings = <&kp C_VOLUME_DOWN>;
-            layers = <0>;
-        };
-        
-        // O + P = Play/Pause
-        combo_play_pause {
-            timeout-ms = <200>;  // Increased delay for media controls
-            key-positions = <10 11>; // O and P positions
-            bindings = <&kp C_PLAY_PAUSE>;
-            layers = <0>;
-        };
-        
-        // Semicolon + Quote = Previous Track  
-        combo_prev_track {
-            timeout-ms = <200>;  // Increased delay for media controls
-            key-positions = <22 23>; // Semicolon and Quote positions
-            bindings = <&kp C_PREVIOUS>;
-            layers = <0>;
-        };
-        
-        // P + Backspace = Next Track
-        combo_next_track {
-            timeout-ms = <200>;  // Increased delay for media controls
-            key-positions = <11 12>; // P and Backspace positions
-            bindings = <&kp C_NEXT>;
-            layers = <0>;
-        };
         
     };
 
@@ -258,8 +226,8 @@
             bindings = <
 &cmd_esc_ctrl_c    &q_ctrl1 LC(N1) Q  &w_ctrl2 LC(N2) W  &e_ctrl3 LC(N3) E  &r_ctrl4 LC(N4) R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &p_screenshot LG(LS(N4)) P     &bspc_del
 &kp TAB    &kp A  &kp S  &kp D     &f_shift LSHIFT F  &g_ctrl LCTRL G           &kp LEFT  &kp ENTER  &kp RIGHT  &h_ctrl RCTRL H  &j_shift RSHIFT J  &kp K      &l_lockscreen LG(LC(Q)) L    &kp SEMI  &kp SQT
-&kp LALT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &n_word_left LA(LEFT) N  &m_word_right LA(RIGHT) M  &kp COMMA  &kp DOT  &kp FSLH  &kp LS(COLON)
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&media_layer 4 LALT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &n_word_left LA(LEFT) N  &m_word_right LA(RIGHT) M  &kp COMMA  &kp DOT  &kp FSLH  &kp LS(COLON)
+                         &kp LGUI  &mo 1  &media_layer 4 SPACE                                               &media_layer 4 ENTER  &mo 2  &kp RALT
             >;
 
              sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -301,6 +269,18 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        media_layer {
+            display-name = "MEDIA";
+            bindings = <
+&kp C_MUTE      &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                               &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans            &trans      &trans             &trans                    &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans            &trans      &trans             &trans        &trans                    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+                                                  &trans      &trans             &trans                                                               &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
