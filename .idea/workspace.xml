@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c769af0c-7054-45a2-be20-c02d1be0e4cc" name="Changes" comment="media layer B">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/eyelash_corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/eyelash_corne.keymap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +81,7 @@
       <workItem from="1755132331840" duration="3946000" />
       <workItem from="1755212010881" duration="879000" />
       <workItem from="1755511199625" duration="976000" />
+      <workItem from="1755725850124" duration="215000" />
     </task>
     <task id="LOCAL-00001" summary="correct switch to eng">
       <option name="closed" value="true" />
