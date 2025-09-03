@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c769af0c-7054-45a2-be20-c02d1be0e4cc" name="Changes" comment="media layer B">
-      <change beforePath="$PROJECT_DIR$/config/eyelash_corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/eyelash_corne.keymap" afterDir="false" />
+    <list default="true" id="c769af0c-7054-45a2-be20-c02d1be0e4cc" name="Changes" comment="fix fn layer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,9 @@
       <workItem from="1755132331840" duration="3946000" />
       <workItem from="1755212010881" duration="879000" />
       <workItem from="1755511199625" duration="976000" />
-      <workItem from="1755725850124" duration="215000" />
+      <workItem from="1755725850124" duration="2066000" />
+      <workItem from="1755776989050" duration="5207000" />
+      <workItem from="1756111993895" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="correct switch to eng">
       <option name="closed" value="true" />
@@ -259,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755512908332</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix fn layer">
+      <option name="closed" value="true" />
+      <created>1755726095352</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1755726095352</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +319,7 @@
     <MESSAGE value="home tilda, cd www, delays" />
     <MESSAGE value="media layer to lalt+space" />
     <MESSAGE value="media layer B" />
-    <option name="LAST_COMMIT_MESSAGE" value="media layer B" />
+    <MESSAGE value="fix fn layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix fn layer" />
   </component>
 </project>
