@@ -193,7 +193,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <500>;
+            tapping-term-ms = <2000>;
             bindings = <&tog>, <&kp>;
         };
 
@@ -251,7 +251,7 @@
             bindings = <
 &cmd_esc_ctrl_c    &q_ctrl1 LC(N1) Q  &w_ctrl2 LC(N2) W  &e_ctrl3 LC(N3) E  &r_ctrl4 LC(N4) R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &p_screenshot LG(LS(N4)) P     &bspc_del
 &kp TAB    &a_screenshotToBuffer LG(LC(LS(N4))) A  &s_screenshot LG(LS(N4)) S  &kp D     &f_shift LSHIFT F  &g_ctrl LCTRL G           &kp LEFT  &kp ENTER  &kp RIGHT  &h_ctrl RCTRL H  &j_shift RSHIFT J  &kp K      &l_lockscreen LG(LC(Q)) L    &kp SEMI  &kp SQT
-&kp LALT  &kp Z  &kp X  &kp C     &kp V  &media_layer 4 B        &media_layer 3 SPACE              &kp DOWN              &kp N  &m_word_right LA(RIGHT) M  &kp COMMA  &kp DOT  &kp FSLH  &kp LS(COLON)
+&kp LALT  &kp Z  &kp X  &kp C     &kp V  &media_layer 4 B        &media_layer 3 SPACE              &kp DOWN              &n_numlock 5 N  &m_word_right LA(RIGHT) M  &kp COMMA  &kp DOT  &kp FSLH  &kp LS(COLON)
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
@@ -313,7 +313,7 @@
             bindings = <
 &trans  &trans    &trans    &trans    &trans    &trans                          &trans  &kp MINUS  &kp N7  &kp N8     &kp N9     &trans        &trans
 &trans  &trans    &trans    &trans    &trans    &trans          &trans  &trans  &trans  &kp PLUS   &kp N4  &kp N5     &kp N6     &kp ASTERISK  &trans
-&trans  &trans    &trans    &trans    &trans    &trans          &trans          &trans  &kp N0     &kp N1  &kp N2     &kp N3     &kp FSLH      &kp DOT
+&trans  &trans    &trans    &trans    &trans    &trans          &trans          &trans  &n_numlock 5 N0     &kp N1  &kp N2     &kp N3     &kp FSLH      &kp DOT
                             &trans    &trans    &trans                          &trans  &trans     &trans
             >;
             
