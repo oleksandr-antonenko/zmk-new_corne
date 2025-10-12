@@ -222,10 +222,10 @@
             layers = <0>;
         };
         
-        // Numlock toggle - combo of M (35) + backspace (11)
+        // Numlock toggle - combo of symbol layer (mo 2) + backspace
         combo_numlock {
             timeout-ms = <50>;
-            key-positions = <35 11>; // M and backspace positions
+            key-positions = <41 11>; // Symbol layer thumb key (41) + backspace (11)
             bindings = <&numlock_toggle 5>; // Toggle layer 5 (numlock layer)
             layers = <0>;
         };
