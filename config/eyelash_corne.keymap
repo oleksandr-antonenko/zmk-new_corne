@@ -170,7 +170,7 @@
         cd_www: cd_www {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp D &kp SPACE &kp TILDE &kp FSLH &kp W &kp W &kp W>;
+            bindings = <&kp C &kp D &kp SPACE &kp TILDE &kp FSLH &kp W &kp W &kp W &kp FSLH>;
         };
 
         media_layer: media_layer {
@@ -187,6 +187,11 @@
             flavor = "tap-preferred";
             tapping-term-ms = <500>;
             bindings = <&kp>, <&kp>;
+        };
+
+        numlock_toggle: numlock_toggle {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
         };
     };
 
@@ -217,7 +222,13 @@
             layers = <0>;
         };
         
-        
+        // Numlock toggle - combo of M (35) + backspace (11)
+        combo_numlock {
+            timeout-ms = <50>;
+            key-positions = <35 11>; // M and backspace positions
+            bindings = <&numlock_toggle 5>; // Toggle layer 5 (numlock layer)
+            layers = <0>;
+        };
         
     };
 
@@ -297,6 +308,18 @@
                                                   &trans      &trans             &trans                                                               &trans  &trans  &trans
             >;
 
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        numlock_layer {
+            display-name = "NUMLOCK";
+            bindings = <
+&trans  &trans    &kp UP    &trans    &trans    &trans                          &trans  &kp N7     &kp N8  &kp N9     &kp PLUS   &trans        &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans    &trans          &trans  &trans  &trans  &kp N4     &kp N5  &kp N6     &kp MINUS  &kp ASTERISK  &kp EQUAL
+&trans  &trans    &trans    &trans    &trans    &trans          &trans          &trans  &kp N1     &kp N2  &kp N3     &kp DOT    &kp FSLH      &trans
+                            &trans    &trans    &trans                          &trans  &trans     &trans
+            >;
+            
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
