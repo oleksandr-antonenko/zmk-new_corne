@@ -304,6 +304,6 @@ combos:
 - p: [9, 10]
   k: {t: '`', s: '~'}
   l: [QWERTY]
-- p: [35, 11]
+- p: [41, 11]
   k: '&numlock_toggle 5'
   l: [QWERTY]
