@@ -205,7 +205,6 @@
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50)>
                 ;
         };
-        };
 
     };
 
