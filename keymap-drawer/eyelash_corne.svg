@@ -503,8 +503,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">N</text>
-<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:arrow-left-bold"/>
-</g>
+<a href="#NUMLOCK">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">NUMLOCK</tspan></text>
+</a></g>
 <g transform="translate(728, 147)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -584,14 +585,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="798" y="18" width="28" height="26" class="combo"/>
 <text x="812" y="31" class="combo tap">`</text>
 <text x="812" y="20" class="combo shifted">~</text>
-</g>
-<g class="combo combopos-3">
-<path d="M924,105 l20,39" class="combo"/>
-<path d="M924,105 l-20,-39" class="combo"/>
-<rect rx="6" ry="6" x="910" y="92" width="28" height="26" class="combo"/>
-<text x="924" y="105" class="combo tap">
-<tspan x="924" dy="-0.6em" style="font-size: 60%">&amp;numlock_…</tspan><tspan x="924" dy="1.2em" style="font-size: 60%">5</tspan>
-</text>
 </g>
 </g>
 </g>
@@ -1832,7 +1825,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">1</text>
-<text x="0" y="-24" class="key shifted">!</text>
+<a href="#NUMLOCK">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">NUMLOCK</tspan></text>
+</a><text x="0" y="-24" class="key shifted">!</text>
 </g>
 <g transform="translate(728, 147)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
