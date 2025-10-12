@@ -15,7 +15,7 @@ layers:
   - {t: P, h: Gui+Sft+4}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:keyboard-tab$$
-  - A
+  - {t: A, h: Gui+Ctl+Sft+4}
   - {t: S, h: Gui+Sft+4}
   - D
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
