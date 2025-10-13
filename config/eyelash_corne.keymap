@@ -197,7 +197,7 @@
             bindings = <&numlock_tog>, <&kp>;
         };
 
-        numlock_tog: numlock_toggle_with_led {
+        numlock_on: numlock_on_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -205,6 +205,22 @@
                 , <&macro_tap &rgb_ug RGB_ON>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50)>
                 ;
+        };
+
+        numlock_off: numlock_off_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &tog 5>
+                , <&macro_tap &rgb_ug RGB_OFF>
+                ;
+        };
+
+        numlock_tog: numlock_toggle {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&numlock_on>, <&numlock_off>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
     };
