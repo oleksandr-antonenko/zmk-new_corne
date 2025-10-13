@@ -193,7 +193,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <2000>;
+            tapping-term-ms = <1000>;
             bindings = <&numlock_tog>, <&kp>;
         };
 
@@ -320,8 +320,8 @@
         numlock_layer {
             display-name = "NUMLOCK";
             bindings = <
-&trans  &trans    &trans    &trans    &trans    &trans                          &trans  &kp MINUS  &kp N7  &kp N8     &kp N9     &trans        &trans
-&trans  &trans    &trans    &trans    &trans    &trans          &trans  &trans  &trans  &kp PLUS   &kp N4  &kp N5     &kp N6     &kp ASTERISK  &trans
+&trans  &trans    &kp UP    &trans    &trans    &trans                          &trans  &kp MINUS  &kp N7  &kp N8     &kp N9     &trans        &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans    &trans          &trans  &trans  &trans  &kp PLUS   &kp N4  &kp N5     &kp N6     &kp ASTERISK  &kp EQUAL
 &trans  &trans    &trans    &trans    &trans    &trans          &trans          &trans  &n_numlock 5 N0     &kp N1  &kp N2     &kp N3     &kp FSLH      &kp DOT
                             &trans    &trans    &trans                          &trans  &trans     &trans
             >;
