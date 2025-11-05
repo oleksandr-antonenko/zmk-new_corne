@@ -130,6 +130,30 @@
             bindings = <&kp>, <&kp>;
         };
 
+        e_long_hold: e_long_hold {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1500>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        r_long_hold: r_long_hold {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1500>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        u_long_hold: u_long_hold {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1500>;
+            bindings = <&kp>, <&kp>;
+        };
+
         cmd_esc_ctrl_c: cmd_esc_ctrl_c {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -259,7 +283,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&cmd_esc_ctrl_c    &q_ctrl1 LC(N1) Q  &w_ctrl2 LC(N2) W  &e_ctrl3 LC(N3) E  &r_ctrl4 LC(N4) R  &kp T                               &kp UP                &y_cmd LGUI Y  &kp U  &kp I      &kp O    &p_screenshot LG(LS(N4)) P     &bspc_del
+&cmd_esc_ctrl_c    &q_ctrl1 LC(N1) Q  &w_ctrl2 LC(N2) W  &e_long_hold LC(LS(E)) E  &r_long_hold LC(LS(R)) R  &kp T                               &kp UP                &y_cmd LGUI Y  &u_long_hold LC(LS(U)) U  &kp I      &kp O    &p_screenshot LG(LS(N4)) P     &bspc_del
 &kp TAB    &a_screenshotToBuffer LG(LC(LS(N4))) A  &s_screenshot LG(LS(N4)) S  &kp D     &f_shift LSHIFT F  &g_ctrl LCTRL G           &kp LEFT  &kp ENTER  &kp RIGHT  &h_ctrl RCTRL H  &j_shift RSHIFT J  &kp K      &l_lockscreen LG(LC(Q)) L    &kp SEMI  &kp SQT
 &kp LALT  &kp Z  &kp X  &kp C     &kp V  &media_layer 4 B        &media_layer 3 SPACE              &kp DOWN              &n_numlock 5 N  &m_word_right LA(RIGHT) M  &kp COMMA  &kp DOT  &kp FSLH  &kp LS(COLON)
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
